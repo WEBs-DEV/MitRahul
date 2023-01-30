@@ -1,0 +1,44 @@
+/*-------Google fonts imported--------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background: rgb(36, 36, 36);
+}
+
+img {
+    width: 170px;
+}
+p{
+    margin-bottom: auto;
+}
+
+/*-------footer start-------*/
+
+footer{
+    background:rgb(36, 36, 36);
+}
+footer .nav-link{
+    color: white;
+}
+
+footer .nav-link:hover{
+    color: rgb(90, 90, 227);
+}
+
+footer .nav-link i{
+    font-size: 20px;
+}
+.copyright{
+    background: black;
+    
+}
+/*-------footer end-------*/
