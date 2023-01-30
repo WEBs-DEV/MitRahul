@@ -1,0 +1,73 @@
+/*-------Google fonts imported--------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+body {
+    background: rgb(36, 36, 36);
+}
+
+img {
+    width: 170px;
+}
+
+/*-------header start-------*/
+
+header {
+    background: black;
+}
+
+
+header .nav-link {
+    color: white;
+    font-size: 16px;
+}
+
+header .nav-link:hover {
+    color: rgb(90, 90, 227);
+}
+
+header .get-btn {
+    color: rgb(90, 90, 227);
+    background: white;
+    border-radius: 4px;
+}
+
+header .get-btn:hover {
+    color: white;
+    background: rgb(90, 90, 227);
+}
+
+/*-------header end-------*/
+
+/*-------navbar start-------*/
+nav button span i {
+    font-size: 30px;
+    color: white;
+
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li .nav-link {
+    font-size: 16px;
+    color: white;
+}
+nav ul li .nav-link:hover{
+    color: rgb(90, 90, 227);
+}
+
+nav .dropdown-menu li a{
+    color: black;
+}
+
+/*-------navbar end-------*/
