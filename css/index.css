@@ -1,0 +1,62 @@
+/*-------Google fonts imported--------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+:root {
+  --primary-color: rgb(13, 172, 235);
+  --secondary-color: rgb(103, 101, 101);
+}
+html,
+body {
+  background-color: white;
+}
+
+img {
+  width: 100%;
+}
+
+.all-services-section img {
+  width: 110px;
+}
+
+.main-services-section .service-title {
+  color: var(--primary-color);
+}
+.main-services-section .service-para {
+  color: var(--secondary-color);
+}
+.all-services-section .section-heading {
+  color: var(--primary-color);
+}
+.all-services-section .section-para {
+  color: var(--secondary-color);
+}
+.all-services-section .service-box {
+  box-shadow: -1px 9px 18px -5px rgba(179, 177, 179, 1);
+  box-shadow: -1px 9px 18px -5px rgba(179, 177, 179, 1);
+}
+.all-services-section .service-title {
+  color: var(--primary-color);
+}
+.all-services-section .service-para {
+  color: var(--secondary-color);
+}
+
+
+.trust-section .primary-heading{
+    color: var(--primary-color);
+}
+.trust-section .secondary-heading{
+    color: black;
+    font-weight: 800;
+}
+.trust-section .para{
+    color: var(--secondary-color);
+}

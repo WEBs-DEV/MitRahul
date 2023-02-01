@@ -7,21 +7,34 @@
     box-sizing: border-box;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
-    font-weight: 600;
+    font-weight: ;
+}
+:root{
+    --primary-color: rgb(13, 172, 235);
 }
 
 body {
-    background: rgb(36, 36, 36);
+    background: rgb(255, 255, 255);
 }
 
 img {
-    width: 170px;
+    width: 100%;
+}
+
+#hero-main{
+    top: 0;
+    min-height: 100vh;
+    position: relative;
+    z-index: 1;
 }
 
 /*-------header start-------*/
 
-header {
-    background: black;
+header .custom-bg-color {
+    background: rgba(252, 251, 251, 0.4)
+}
+header img{
+    width: 200px;
 }
 
 
@@ -31,27 +44,32 @@ header .nav-link {
 }
 
 header .nav-link:hover {
-    color: rgb(90, 90, 227);
+    color: var(--primary-color);
 }
 
 header .get-btn {
-    color: rgb(90, 90, 227);
+    color: var(--primary-color);
     background: white;
     border-radius: 4px;
 }
 
 header .get-btn:hover {
-    color: white;
-    background: rgb(90, 90, 227);
+    color: whitesmoke;
+    background: var(--primary-color);
 }
-
 /*-------header end-------*/
 
 /*-------navbar start-------*/
+nav .row{
+    background-color: rgba(36, 36, 36,0.7);
+}
+
+nav img{
+    width: 150px;
+}
 nav button span i {
     font-size: 30px;
     color: white;
-
 }
 
 nav ul li {
@@ -63,10 +81,28 @@ nav ul li .nav-link {
     color: white;
 }
 nav ul li .nav-link:hover{
-    color: rgb(90, 90, 227);
+    color: var(--primary-color);
+}
+
+nav .dropdown:hover .dropdown-menu{
+    display: block;
 }
 
 nav .dropdown-menu li a{
+    color: black;
+}
+
+#hero-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;  
+}
+
+#index{
+    background-color: white;
     color: black;
 }
 
