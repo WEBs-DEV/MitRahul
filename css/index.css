@@ -7,7 +7,7 @@
   box-sizing: border-box;
   letter-spacing: 1px;
   font-family: "Poppins", sans-serif;
-  font-weight: 600;
+  font-weight: 500;
 }
 :root {
   --primary-color: rgb(13, 172, 235);
@@ -39,8 +39,8 @@ img {
   color: var(--secondary-color);
 }
 .all-services-section .service-box {
-  box-shadow: -1px 9px 18px -5px rgba(179, 177, 179, 1);
-  box-shadow: -1px 9px 18px -5px rgba(179, 177, 179, 1);
+
+  box-shadow: 1px 1px 10px 1px rgba(179, 177, 179, 1);
 }
 .all-services-section .service-title {
   color: var(--primary-color);
@@ -49,14 +49,25 @@ img {
   color: var(--secondary-color);
 }
 
-
 .trust-section .primary-heading{
     color: var(--primary-color);
 }
 .trust-section .secondary-heading{
     color: black;
-    font-weight: 800;
 }
 .trust-section .para{
     color: var(--secondary-color);
+}
+
+.contact-section .section-heading{
+  color: var(--primary-color);
+}
+
+.contact-section .submit input{
+  background: var(--primary-color);
+  color: white;
+  font-size: 18px;
+}
+.contact-section .submit input:hover{
+  background-color: rgb(46, 124, 46);
 }

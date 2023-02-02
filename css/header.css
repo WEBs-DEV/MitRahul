@@ -7,10 +7,10 @@
     box-sizing: border-box;
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
-    font-weight: ;
 }
 :root{
     --primary-color: rgb(13, 172, 235);
+    --secondary-color: rgb(103, 101, 101);
 }
 
 body {
@@ -48,14 +48,13 @@ header .nav-link:hover {
 }
 
 header .get-btn {
-    color: var(--primary-color);
-    background: white;
+    background: var(--primary-color);
     border-radius: 4px;
 }
 
 header .get-btn:hover {
-    color: whitesmoke;
-    background: var(--primary-color);
+    color: var(--primary-color);
+    background: var(--secondary-color);
 }
 /*-------header end-------*/
 
