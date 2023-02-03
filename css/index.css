@@ -22,8 +22,9 @@ img {
   width: 100%;
 }
 
-.all-services-section img {
-  width: 110px;
+.main-services-section{
+  background: rgb(237, 237, 237);
+  
 }
 
 .main-services-section .service-title {
@@ -31,6 +32,13 @@ img {
 }
 .main-services-section .service-para {
   color: var(--secondary-color);
+}
+
+.all-services-section{
+  background-color: rgb(248, 245, 245);
+}
+.all-services-section img {
+  width: 110px;
 }
 .all-services-section .section-heading {
   color: var(--primary-color);
