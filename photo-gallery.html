@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <link rel="stylesheet" href="css/photo-gallery.css">
+    <title>Photo</title>
+</head>
+<body>
+    <div class="photo-gallery">
+        <input type="radio" name="Photo" id="check1" checked>
+        <input type="radio" name="Photo" id="check2">
+        <input type="radio" name="Photo" id="check3">
+        <input type="radio" name="Photo" id="check4">
+        <input type="radio" name="Photo" id="check5">
+        <div class="gallery-container">
+            <h1>Work Gallery</h1>
+            <div class="top_content">
+                <label for="check1">All</label>
+                <label for="check2">Photo Editing</label>
+                <label for="check3">Graphics Design</label>
+                <label for="check4">Video Editing</label>
+                <label for="check5">Web Development</label>
+            </div>
+            <div class="gallery">
+                <a href="images/photo-gallery-img/place1.jpg" class="pic place">
+                    <img src="img/place1.jpg">
+                </a>
+                <a href="images/photo-gallery-img/family1.jpg .jpg" class="pic family">
+                    <img src="img/family1.jpg">
+                </a>
+                <a href="images/photo-gallery-img/web.jpg" class="pic web">
+                    <img src="images/photo-gallery-img/web.jpg" alt="">
+                </a>
+                <a href="img/child1.jpg" class="pic child">
+                    <img src="img/child1.jpg">
+                </a>
+                <a href="img/place2.jpg" class="pic place">
+                    <img src="img/place2.jpg">
+                </a>
+                <a href="img/family2.jpg" class="pic family">
+                    <img src="img/family2.jpg">
+                </a>
+                <a href="img/web.jpg" class="pic web">
+                    <img src="img/web.jpg" alt="">
+                </a>
+                <a href="img/child2 .jpg" class="pic child">
+                    <img src="img/child2 .jpg">
+                </a>
+                <a href="img/place3.jpg" class="pic place">
+                    <img src="img/place3.jpg">
+                </a>
+                <a href="img/family3.jpg" class="pic family">
+                    <img src="img/family3.jpg">
+                </a>
+                <a href="img/web.jpg" class="pic web">
+                    <img src="img/web.jpg" alt="">
+                </a>
+                <a href="img/child3.jpg" class="pic child">
+                    <img src="img/child3.jpg">
+                </a>
+                <a href="img/place4.jpg" class="pic place">
+                    <img src="img/place4.jpg">
+                </a>
+                <a href="img/family4.jpg" class="pic family">
+                    <img src="img/family4.jpg">
+                </a>
+                <a href="img/web.jpg" class="pic web">
+                    <img src="img/web.jpg" alt="">
+                </a>
+                <a href="img/child4.jpg" class="pic child">
+                    <img src="img/child4.jpg">
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $('.gallery-container').magnificPopup({
+
+            delegate: 'a',
+            type: 'image',
+            gallery: {
+                enabled: true
+            }
+        });
+    </script>
+</body>
+
+</html>

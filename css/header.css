@@ -31,7 +31,7 @@ img {
 /*-------header start-------*/
 
 header .custom-bg-color {
-    background: rgba(252, 251, 251, 0.4)
+    background: rgba(255, 255, 255, 0.6);
 }
 header img{
     width: 200px;
@@ -39,7 +39,7 @@ header img{
 
 
 header .nav-link {
-    color: white;
+    color:black;
     font-size: 16px;
 }
 
@@ -48,6 +48,7 @@ header .nav-link:hover {
 }
 
 header .get-btn {
+    color: white; 
     background: var(--primary-color);
     border-radius: 4px;
 }
@@ -60,7 +61,7 @@ header .get-btn:hover {
 
 /*-------navbar start-------*/
 nav .row{
-    background-color: rgba(36, 36, 36,0.7);
+    background-color: var(--secondary-color);
 }
 
 nav img{
@@ -102,7 +103,6 @@ nav .dropdown-menu li a{
     height: 100%;  
 }
 
-
 #carouselExampleCaptions {
     z-index: 9;
     min-height: 100vh;
@@ -123,34 +123,33 @@ html,body{
 }
 #carouselExampleCaptions .row .slide-content {
     position: absolute;
-    margin: auto;
-    padding: 0 25px;
-    top: 30%;
+    top: 0;
     left: 0;
     width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0,0.4);
 }
 
 #carouselExampleCaptions h2 {
+    margin-top: 15%;
     font-size: 40px;
     color: var(--primary-color);
     line-height: 45px;
-    margin-bottom: auto;
 }
 #carouselExampleCaptions .para {
     font-size: 100px;
     font-weight: 700;
     color: white;
-    line-height: 130px;
-    margin-bottom: auto;
+    line-height: 70px;
+    margin-bottom: 30px;
 }
 #carouselExampleCaptions .para1 {
     font-size: 20px;
     color: white;
     line-height: 30px;
-    margin-bottom: auto;
+    margin-bottom: 30px;
 }
 .slide-content .contact-btn{
-    margin: 30px;
     margin-left: 200px;
 }
 

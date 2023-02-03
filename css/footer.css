@@ -1,12 +1,17 @@
-:root {
+/*-------Google fonts imported--------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+}
+:root{
     --primary-color: rgb(13, 172, 235);
     --secondary-color: rgb(103, 101, 101);
-  }
-  html,
-  body {
-    background-color: white;
-  }
-
+}
 img {
     width: 170px;
 }
@@ -17,7 +22,7 @@ p{
 /*-------footer start-------*/
 
 footer{
-    background:rgb(36, 36, 36);
+    background-color:  var(--secondary-color);
 }
 footer .nav-link{
     color: white;
@@ -31,7 +36,6 @@ footer .nav-link i{
     font-size: 20px;
 }
 .copyright{
-    background: black;
-    
+    background-color: rgb(26, 25, 25);
 }
 /*-------footer end-------*/
