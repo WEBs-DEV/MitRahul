@@ -124,7 +124,7 @@ img {
 }
 .big-box-section img{
   object-fit: cover;
-  object-position: center;
+  object-position:center;
   height: 100%;
 }
 
