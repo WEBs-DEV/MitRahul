@@ -22,7 +22,8 @@ img {
   width: 100%;
 }
 
-.all-services-section{
+/*-------all services section css start--------*/
+.all-services-section {
   background: url(/images/all-service-bg.jpg);
   background-position: top center;
   background-size: cover;
@@ -36,7 +37,7 @@ img {
 }
 .all-services-section .section-para p {
   color: black;
-  font-size: 18px; 
+  font-size: 18px;
   font-weight: 600;
 }
 .all-services-section .service-box {
@@ -45,14 +46,14 @@ img {
   border-radius: 5px;
   transition: all 0.2s;
 }
-.all-services-section .service-box:hover{
+.all-services-section .service-box:hover {
   background: var(--primary-color);
   transform: scale(1.02);
 }
-.all-services-section .service-box:hover h4{
+.all-services-section .service-box:hover h4 {
   color: white;
 }
-.all-services-section .service-box:hover p{
+.all-services-section .service-box:hover p {
   color: white;
 }
 
@@ -62,35 +63,70 @@ img {
 .all-services-section .service-para {
   color: var(--secondary-color);
 }
+/*-------all services section css end--------*/
 
-.trust-section .primary-heading{
-    color: var(--primary-color);
+/*-------credit card section css start--------*/
+.credit-card-section{
+  background: linear-gradient(to right,rgba(13, 172, 235,0.2),rgba(13, 172, 235,0.4),rgba(13, 172, 235,0.6));
 }
-.trust-section .secondary-heading{
-    color: black;
+.credit-card-section .section-head .heading {
+  color: var(--primary-color);
 }
-.trust-section .para{
-    color: var(--secondary-color);
+.credit-card-section .section-head .para {
+  color: black;
+}
+.credit-card-section .para {
+  color: var(--secondary-color);
+}
+.credit-card-section .credit-card-img {
+  width: 400px;
+  height: 400px;
+  box-shadow: 0 0px 10px grey;
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+
+  animation: rotate-card 7s linear infinite alternate;
+  transition: rotate-card 0.3s;
+}
+@keyframes rotate-card {
+  0% {
+  transform: translateX(30px);
+  }
+  25% {
+    transform:translateY(20px);
+  }
+
+  50% {
+    transform:translateX(-40px);
+
+  }
+  75% {
+    transform:translateY(-20px);
+  }
+ 
+  100% {
+    transform:translateX(20px);
+  }
 }
 
-.main-services-section{
-  background: url('/images/p3.jpg');
+/*-------credit card section css end--------*/
+
+.main-services-section {
+  background: url("/images/p3.jpg");
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   min-height: 250px;
   display: flex;
-  
 }
 
-.main-services-section .bg-overlay{
-  position:absolute;
+.main-services-section .bg-overlay {
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 250px;
-  background: rgba(0, 0, 0,0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .main-services-section .title h1 {
@@ -99,68 +135,76 @@ img {
   font-size: 50px;
 }
 .main-services-section .para {
-  color:white;
+  color: white;
   font-size: 20px;
 }
-.main-services-section .contact-btn .btn{
+.main-services-section .contact-btn .btn {
   background-color: var(--primary-color);
   color: white;
   padding: 7px 20px;
   font-weight: 600;
 }
-.main-services-section .contact-btn .btn:hover{
+.main-services-section .contact-btn .btn:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
 
-.big-box-section .read-more-btn .btn{
+.big-box-section .read-more-btn .btn {
   background: var(--primary-color);
   color: white;
   padding: 7px 20px;
 }
-.big-box-section .read-more-btn .btn:hover{
+.big-box-section .read-more-btn .btn:hover {
   background: var(--secondary-color);
   color: var(--primary-color);
 }
-.big-box-section img{
+.big-box-section img {
   object-fit: cover;
-  object-position:center;
+  object-position: center;
   height: 100%;
 }
 
-.about-section{
-  background: url('/images/real-state-img/banner-img-4.jpg');
+.about-section {
+  background: url("/images/real-state-img/banner-img-4.jpg");
   background-size: cover;
   background-attachment: fixed;
   min-height: 400px;
   position: relative;
 }
-.about-section .bg-overlay{
+.about-section .bg-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(13, 172, 235,0.6);
+  background: rgba(13, 172, 235, 0.6);
 }
-.about-section .heading h1{
+.about-section .heading h1 {
   color: white;
   font-size: 60px;
 }
-.about-section .para p{
+.about-section .para p {
   color: white;
-  font-size: 20px;  
+  font-size: 20px;
 }
 
-.contact-section .section-heading{
+.counter-number-section{
+  background: url('/images/credit-card-img.jpg');
+  background-size: cover;
+}
+.counter-number-section .bg-overlay{
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.contact-section .section-heading {
   color: var(--primary-color);
 }
 
-.contact-section .submit input{
+.contact-section .submit input {
   background: var(--primary-color);
   color: white;
   font-size: 10px;
 }
-.contact-section .submit input:hover{
+.contact-section .submit input:hover {
   background-color: rgb(46, 124, 46);
 }

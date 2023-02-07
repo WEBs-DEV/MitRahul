@@ -1,0 +1,78 @@
+/*-------Google fonts imported--------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+:root {
+  --primary-color: rgb(13, 172, 235);
+  --secondary-color: rgb(103, 101, 101);
+}
+html,
+body {
+  background-color: white;
+}
+
+.counter-container{
+    padding: 60px 0;
+}
+.counter-container .section-heading {
+    margin-bottom: 40px;
+    text-align: center;
+    color: var(--primary-color);
+   
+}
+.counter-container .section-heading h1{
+    font-size: 50px;
+}
+
+.container-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.counter-section{
+    background: white;
+    border-radius: 5px;
+    min-width: 150px;
+    flex-basis: 180px;
+    font-size: 2rem;
+    padding: 5px 10px;
+    text-align: center;
+    box-shadow: 0 1px 3px grey;
+}
+.counter-section .number{
+    font-size: 2rem;
+}
+.counter-section i{
+    font-size: 30px;
+}
+
+@media screen and (max-width:1200px){
+    .counter-section{
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .counter-section{
+        padding: 5px;
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .counter-section{
+        padding: 2px 5px;
+        margin-bottom: 10px;
+        min-width: 100px;
+        flex-basis:130px ;
+    }
+}
