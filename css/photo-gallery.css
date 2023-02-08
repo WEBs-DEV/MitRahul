@@ -210,21 +210,6 @@
     position: absolute;
 }
 
-.photo-gallery #check5:checked~.gallery-container .gallery .web {
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-    transition: 0.5s;
-}
-
-.photo-gallery #check5:checked~.gallery-container .gallery .place,
-.photo-gallery #check5:checked~.gallery-container .gallery .child,
-.photo-gallery #check5:checked~.gallery-container .gallery .family {
-    opacity: 0;
-    transform: scale(0);
-    position: absolute;
-}
-
 
 /*------------------------media query start---------------------*/
 
