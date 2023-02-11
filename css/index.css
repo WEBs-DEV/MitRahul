@@ -33,19 +33,26 @@ img {
 .all-services-section img {
   width: 100px;
 }
-.all-services-section .section-heading {
+.all-services-section .section-heading{
   color: var(--primary-color);
 }
-.all-services-section .section-para p {
+.all-services-section .section-para  {
   color: black;
   font-size: 18px;
   font-weight: 600;
 }
 .all-services-section .service-box {
-  box-shadow: 0 1px 3px grey;
+  color: var(--primary-color);
   background: rgb(255, 255, 255);
   border-radius: 5px;
+  box-shadow: 0 1px 3px grey;
   transition: all 0.2s;
+}
+.all-services-section .service-title h4{
+  color: var(--primary-color);
+}
+.all-services-section .service-para p{
+  color: var(--secondary-color);
 }
 .all-services-section .service-box:hover {
   background: var(--primary-color);
@@ -58,12 +65,7 @@ img {
   color: white;
 }
 
-.all-services-section .service-title {
-  color: var(--primary-color);
-}
-.all-services-section .service-para {
-  color: var(--secondary-color);
-}
+
 /*-------all services section css end--------*/
 
 /*-------credit card section css start--------*/
