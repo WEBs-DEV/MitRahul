@@ -14,8 +14,9 @@
     --secondary-color: rgb(103, 101, 101);
 }
 
-body {
+html,body {
     background: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
 img {
