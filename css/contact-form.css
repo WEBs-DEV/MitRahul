@@ -1,0 +1,35 @@
+/*-------Google fonts imported--------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+:root {
+  --primary-color: rgb(13, 172, 235);
+  --secondary-color: rgb(103, 101, 101);
+}
+html,
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+
+.contact-section .section-heading {
+    color: var(--primary-color);
+  }
+  
+  .contact-section .submit input {
+    background: var(--primary-color);
+    color: white;
+    font-size: 10px;
+  }
+  .contact-section .submit input:hover {
+    background-color: rgb(46, 124, 46);
+  }
+  

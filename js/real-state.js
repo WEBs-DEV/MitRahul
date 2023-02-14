@@ -2,6 +2,7 @@ $(document).ready(function () {
   $("#header-section").load("real-state-header.html");
   $("#service-slider-section").load("service-slider.html");
   $("#photo-gallery-section").load("photo-gallery.html");
+  $("#contact-form-section").load("contact-form.html");
   $("#footer-section").load("footer.html");
 });
 
