@@ -1,0 +1,89 @@
+/*-------Google fonts imported--------*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --primary-color: rgb(13, 172, 235);
+  --secondary-color: rgb(103, 101, 101);
+}
+
+html,
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+
+img {
+  width: 100%;
+}
+
+.service-card-slider-container {
+  margin: 70px 25px;
+}
+
+.swiper-wrapper {
+  display: flex;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+.service-card-slider-container .swiper-slide .service-card {
+  box-shadow: 0px 1px 4px grey;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: rgb(243, 242, 242);
+  position: relative;
+}
+
+.service-card::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: var(--primary-color);
+  transition: all 0.4s ease-in-out;
+}
+.service-card:hover::after{
+  width: 100%;
+}
+
+.swiper-slide img {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+.service-card-slider-container .swiper-slide .card-img {
+  overflow: hidden;
+}
+
+.service-card-slider-container .swiper-slide .card-img:hover img {
+  transform: scale(1.15);
+}
+
+.service-card-slider-container .title {
+  color: var(--primary-color);
+}
+
+.service-card-slider-container .para {
+  color: var(--secondary-color);
+}
+
+.swiper-pagination span {
+  background-color: var(--primary-color);
+}

@@ -34,6 +34,7 @@ img {
     border-radius: 5px;
     position: relative;
     transition: all 0.2s;
+    overflow: hidden;
 }
 .main-focus-section .service .title{
     color: var(--primary-color);
@@ -67,9 +68,7 @@ img {
 .main-focus-section .service:hover .service-img img{
     transform: scale(1.2);
 }
-.main-focus-section .service:hover::after{
-    width: 100%;
-}
+
 .main-focus-section .service::after{
     content: '';
     position: absolute;
@@ -77,8 +76,13 @@ img {
     bottom: 0;
     width: 0;
     height: 4px;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px;
     background: var(--primary-color);
     transition: all 0.4s ease-in-out;
+}
+.main-focus-section .service:hover::after{
+    width: 100%;
 }
 
 /*-------main focus css start--------*/
