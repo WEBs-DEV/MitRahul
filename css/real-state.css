@@ -240,5 +240,8 @@ img {
     color: var(--primary-color);
     border: 1px solid gray;
 }
+.area-section .option-btns .active{
+    color: var(--primary-color);
+}
 
 /*-------Area section css end--------*/
