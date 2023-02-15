@@ -2,140 +2,134 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  letter-spacing: 1px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 500;
-}
-:root {
-  --primary-color: rgb(13, 172, 235);
-  --secondary-color: rgb(103, 101, 101);
-}
-html,
-body {
-  background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
-.card-slider-section{
+:root {
+    --primary-color: rgb(13, 172, 235);
+    --secondary-color: rgb(103, 101, 101);
+}
+
+html,
+body {
+    background-color: white;
+}
+
+.card-slider-section {
     display: flex;
     align-items: stretch;
     justify-content: center;
+    margin: 50px auto;    
 }
-.slide-container{
+
+.slide-container {
     width: 100%;
 }
-.slide-content{
-    padding: 45px 20px;
+
+.slide-content {
     overflow: hidden;
 }
-.card{
-    border-radius: 25px;
+.swiper-wrapper{
     overflow: hidden;
-    padding: 5px;
 }
+.card-slider-section .card {
+    margin: 5px;
+}
+
+.card-slider-section .card>div {
+    box-shadow: 0 1px 5px gray;
+    border-radius: 5px;
+}
+
 .image-content,
-.card-content{
+.card-content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.image-content{
+
+.image-content {
     position: relative;
 }
 
-.card-image{
+.card-image {
     position: relative;
     min-height: 200px;
     width: 100%;
     overflow: hidden;
     margin-bottom: 10px;
 }
-.card-image .card-img{
+
+.card-image .card-img {
     min-height: inherit;
     width: 100%;
     object-fit: center;
     transition: all 0.3s;
 }
-.overlay{
+
+.overlay {
     position: absolute;
     content: 'hello';
     left: 50%;
     top: 50%;
     text-align: center;
     color: white;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%, -50%);
     height: 95%;
     width: 95%;
-    background-color: rgba(103, 101, 101, 0.8); 
+    background-color: rgba(103, 101, 101, 0.8);
     visibility: hidden;
     transition: all 0.4s;
 }
-.card-image:hover .overlay{
+
+.card-image:hover .overlay {
     visibility: visible;
 }
-.card-image:hover .card-img{
+
+.card-image:hover .card-img {
     z-index: 1;
     transform: scale(1.2);
 }
-.name{
+
+.name {
     font-size: 25px;
     color: #333;
     font-weight: 500;
     margin-bottom: 10px;
 }
-.description{
+
+.description {
     font-size: 18px;
     color: #707070;
     text-align: center;
     line-height: 22px;
 }
-.card-content .button{
+
+.card-content .button {
     font-size: 16px;
     color: #FFF;
     padding: 8px 20px;
     background-color: var(--primary-color);
     margin: 14px auto;
 }
-.card-content .button:hover{
+
+.card-content .button:hover {
     background: var(--secondary-color);
     color: var(--primary-color);
 }
-.swiper-navBtn{
-    
-    color: var(--primary-color);
-    transition: color 0.3s;
-}
-.swiper-navBtn:hover{
-    color: var(--secondary-color);
-}
-.swiper-navBtn::before,
-.swiper-navBtn::after{
-    display: none;
-    font-size: 30px;
-}
-.swiper-button-next{
-    right: 8;
-}
-.swiper-button-prev{
-    left: 8;
-}
-.swiper-pagination-bullet{
-    background-color: #6e93f7;
-    opacity: 1;
-}
-.swiper-pagination-bullet-active{
-    background-color: #4070f4;
-}
+
 
 @media screen and (min-width: 768px) {
-    .slide-content{
+    .slide-content {
         margin: 0 10px;
     }
-    .swiper-navBtn{
+
+    .swiper-navBtn {
         display: block;
     }
 }
-
-

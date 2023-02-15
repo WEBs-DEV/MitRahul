@@ -1,18 +1,12 @@
 var swiper = new Swiper(".slide-content", {
-  spaceBetween: 0,
+  spaceBetween: 5,
   loop: true,
-  centerSlide: "true",
-  fade: "true",
+  centerSlider:false,
   grabCursor: "true",
   autoplay: true,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
   },
 
   breakpoints: {

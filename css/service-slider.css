@@ -59,7 +59,7 @@ img {
   background: var(--primary-color);
   transition: all 0.4s ease-in-out;
 }
-.service-card:hover::after{
+ .swiper-slide:hover .service-card::after{
   width: 100%;
 }
 
