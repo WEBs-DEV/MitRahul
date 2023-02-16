@@ -11,20 +11,28 @@ AOS.init({
   // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
   offset: 50, // offset (in px) from the original trigger point
   // values from 0 to 3000, with step 50ms
-  delay:1000,
+  delay: 1000,
   duration: 1000, // values from 0 to 3000, with step 50ms
-  easing: 'ease', // default easing for AOS animations
+  easing: "ease", // default easing for AOS animations
 });
-
 
 // area section
 
-// var open(option-n){
+let tabLink = document.querySelector("#tab-links");
 
- // var options = document.querySelectorAll(".option");
- // console.log(options)
+tabLink.addEventListener("click", function (e) {
+  let tabId = e.target.id;
+  let contEle = document.querySelectorAll(".tab-content");
+  let contLen = contEle.length;
+  for (let x = 0; x < contLen; x++) {
+    contEle[x].classList.add("hide-content");
+  }
+  document.querySelector("#content-" + tabId).classList.remove("hide-content");
 
- // if(option-n==1){
- //   options[option-n];
- // }
- // };
+  let tabEle = document.querySelectorAll(".tab");
+  let tabLen = tabEle.length;
+  for (let y = 0; y < tabLen; y++) {
+    tabEle[y].classList.add("non-active-tab");
+  }
+  document.querySelector("#" + tabId).classList.remove("non-active-tab");
+});
