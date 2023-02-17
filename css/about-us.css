@@ -44,3 +44,26 @@ img {
  }
 
 /* ---------about-banner css end------- */
+
+.about-section .about-img img{
+    width: 80%;
+}
+.about-section .about-img .upper-img img{
+    position: absolute;
+    width: 60%;
+    top: 45%;
+    right: 10%;
+}
+.about-section .about-content .heading{
+    color: var(--primary-color);
+}
+
+.about-section .about-content .sub-para{
+    color: var(--secondary-color);
+}
+.about-section .about-content .facilities .facility-img  img{
+    width: 80px;
+}
+.about-section .about-content .facilities .facility {
+    color: var(--secondary-color);
+}

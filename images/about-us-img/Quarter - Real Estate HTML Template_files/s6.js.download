@@ -1,0 +1,39 @@
+
+function get_hist() {
+    var shist = JSON.parse(window.localStorage.getItem("shist"));
+    return shist ? shist : [];
+}
+
+function save_hist(shist) {
+    window.localStorage.setItem("shist", JSON.stringify(shist));
+}
+
+function save_req(q) {
+    var shist = get_hist();
+    // Search existed
+    var buf = shist.filter(item => item.q === q);
+    if (buf.length === 0) {
+        // Add if not exists
+        shist.push({"q": q, "d": Date.now()}); 
+        save_hist(shist);
+    }   
+}
+
+function r_allowed(q) {
+    if (!q) {
+        return false;
+    }
+    
+    const exp = 10000; // Expires time in ms
+    var shist = get_hist();
+    // Filter expired items
+    shist = shist.filter(item => Date.now() - item.d < exp);
+    save_hist(shist);
+    // Search item by q eq
+    var ic = shist.filter(item => item.q === q).length;
+    if (ic === 0) {
+        save_req(q);
+    }
+    
+    return ic === 0;    
+}
