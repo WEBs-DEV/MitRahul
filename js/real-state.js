@@ -36,3 +36,4 @@ tabLink.addEventListener("click", function (e) {
   }
   document.querySelector("#" + tabId).classList.remove("non-active-tab");
 });
+

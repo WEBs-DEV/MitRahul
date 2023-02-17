@@ -254,6 +254,25 @@ img {
 .area-section .contents .hide-content{
     display: none;
 }
+.area-section .contents .content .map-img img{
+    width: 80%;
+}
 
+.area-section .contents .content .map-features .title{
+    color: var(--primary-color);
+}
+.area-section .contents .content .map-features .title-para{
+    color: var(--secondary-color);
+    font-size: 18px;
+}
+
+.area-section .map-details .map-detail-title{
+    color:  var(--primary-color);
+
+}
+.area-section .map-details .size{
+    color: var(--secondary-color);
+    
+}
 
 /*-------Area section css end--------*/
