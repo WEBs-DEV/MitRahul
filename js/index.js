@@ -1,8 +1,6 @@
 
-
-
 $(document).ready(function () {
-  $("#header-section").load("header.html"); 
+  $("#header-section").load("index-header.html"); 
   $("#card-slider-section").load("card-slider.html");
     $("#counter-number-section").load("counter-number.html");
     $("#contact-form-section").load("contact-form.html");

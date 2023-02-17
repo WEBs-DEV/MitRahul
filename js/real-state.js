@@ -18,6 +18,7 @@ AOS.init({
 
 // area section
 
+
 let tabLink = document.querySelector("#tab-links");
 
 tabLink.addEventListener("click", function (e) {

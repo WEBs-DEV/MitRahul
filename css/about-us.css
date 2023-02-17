@@ -1,0 +1,46 @@
+/*-------Google fonts imported--------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+:root {
+  --primary-color: rgb(13, 172, 235);
+  --secondary-color: rgb(103, 101, 101);
+}
+html,
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+img {
+  width: 100%;
+}
+
+/* ---------about-banner css start-------- */
+.banner-section{
+    background: rgb(249, 249, 249);
+}
+.banner-section .left-content .title h1{
+    color: var(--primary-color);
+    font-size: 50px;
+}
+
+.banner-section .left-content .title-para{
+    color: var(--secondary-color);
+}
+.banner-section .right-img img{
+   width: 250px; 
+   transition: all 0.4s;
+}
+.banner-section .right-img:hover img{
+    transform: scale(1.2);
+ }
+
+/* ---------about-banner css end------- */
