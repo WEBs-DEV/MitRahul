@@ -34,15 +34,8 @@ body {
 .slide-content {
     overflow: hidden;
 }
-.swiper-wrapper{
-    overflow: hidden;
-}
-.card-slider-section .card {
-    margin: 5px;
-}
 
 .card-slider-section .card>div {
-    box-shadow: 0 1px 5px gray;
     border-radius: 5px;
 }
 
