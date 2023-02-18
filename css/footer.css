@@ -13,7 +13,7 @@
     --secondary-color: rgb(103, 101, 101);
 }
 img {
-    width: 170px;
+    width: 300px;
 }
 p{
     margin-bottom: auto;
@@ -23,6 +23,7 @@ p{
 
 footer{
     background-color:  var(--secondary-color);
+    background: rgb(45, 71, 73);
 }
 footer .nav-link{
     color: white;

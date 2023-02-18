@@ -38,10 +38,31 @@
       </div>
     </div>
   </div>
+  
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
     crossorigin="anonymous"></script>
-  <script src="js/counter-number.js"></script>
+    
+  <script>
+    const number = document.querySelectorAll(".number")
+    const speed = 100;
+    number.forEach(element => {
+      incNumber(element)
+    });
+    function incNumber(elem) {
+      let text = +elem.innerText;
+      const value = +elem.getAttribute("data-target");
+      const inc = value / speed
+      if (text < value) {
+        elem.innerText = inc + text;
+        setTimeout(() => {
+          incNumber(elem)
+        }, 20);
+      } else {
+        elem.innerText = value;
+      }
+    }
+  </script>
 
 </body>
 
