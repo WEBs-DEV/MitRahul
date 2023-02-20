@@ -9,10 +9,12 @@
   font-family: "Poppins", sans-serif;
   font-weight: 500;
 }
+
 :root {
   --primary-color: rgb(13, 172, 235);
   --secondary-color: rgb(103, 101, 101);
 }
+
 html,
 body {
   background-color: white;
@@ -30,17 +32,21 @@ img {
   background-size: cover;
   background-attachment: fixed;
 }
+
 .all-services-section img {
   width: 100px;
 }
-.all-services-section .section-heading{
+
+.all-services-section .section-heading {
   color: var(--primary-color);
 }
-.all-services-section .section-para  {
+
+.all-services-section .section-para {
   color: black;
   font-size: 18px;
   font-weight: 600;
 }
+
 .all-services-section .service-box {
   color: var(--primary-color);
   background: rgb(255, 255, 255);
@@ -48,38 +54,48 @@ img {
   box-shadow: 0 1px 3px grey;
   transition: all 0.2s;
 }
-.all-services-section .service-title h4{
+
+.all-services-section .service-title h4 {
   color: var(--primary-color);
 }
-.all-services-section .service-para p{
+
+.all-services-section .service-para p {
   color: var(--secondary-color);
 }
+
 .all-services-section .service-box:hover {
   background: var(--primary-color);
   transform: scale(1.02);
 }
+
 .all-services-section .service-box:hover h4 {
   color: white;
 }
+
 .all-services-section .service-box:hover p {
   color: white;
 }
+
 /*-------all services section css end--------*/
 
 /*-------credit card section css start--------*/
-.credit-card-section{
-  background: linear-gradient(to right,rgba(13, 172, 235,0.2),rgba(13, 172, 235,0.4),rgba(13, 172, 235,0.6));
+.credit-card-section {
+  background: linear-gradient(to right, rgba(13, 172, 235, 0.2), rgba(13, 172, 235, 0.4), rgba(13, 172, 235, 0.6));
 }
-.credit-card-section .section-head .heading h1{
+
+.credit-card-section .section-head .heading h1 {
   color: var(--primary-color);
   font-size: 50px;
 }
+
 .credit-card-section .section-head .para {
   color: black;
 }
+
 .credit-card-section .para {
   color: var(--secondary-color);
 }
+
 .credit-card-section .credit-card-img {
   width: 350px;
   box-shadow: 0 0px 10px grey;
@@ -88,24 +104,27 @@ img {
   transition: rotate-card 0.3s;
 
 }
+
 @keyframes rotate-card {
   0% {
-  transform: translateX(30px);
+    transform: translateX(30px);
   }
+
   25% {
-    transform:translateY(20px);
+    transform: translateY(20px);
   }
 
   50% {
-    transform:translateX(-40px);
+    transform: translateX(-40px);
 
   }
+
   75% {
-    transform:translateY(-20px);
+    transform: translateY(-20px);
   }
- 
+
   100% {
-    transform:translateX(20px);
+    transform: translateX(20px);
   }
 }
 
@@ -129,21 +148,25 @@ img {
   font-weight: 600;
   font-size: 50px;
 }
+
 .main-services-section .para {
   color: white;
   font-size: 20px;
 }
+
 .main-services-section .contact-btn .btn {
   background-color: var(--primary-color);
   color: white;
   padding: 7px 20px;
   font-weight: 600;
 }
+
 .main-services-section .contact-btn .btn:hover {
   background-color: var(--secondary-color);
   color: var(--primary-color);
 }
-.big-box-section{
+
+.big-box-section {
   background: rgb(195, 195, 195);
 }
 
@@ -151,23 +174,72 @@ img {
   background: var(--primary-color);
   color: white;
   padding: 7px 20px;
-  
+
 }
+
 .big-box-section .read-more-btn .btn:hover {
   background: var(--secondary-color);
   color: var(--primary-color);
 }
-.big-box-section .img-box{
+
+.big-box-section .img-box {
   width: 300px;
-  border-radius: 55% 45% 53% 47% / 50% 30% 70% 50% ;
+  border-radius: 55% 45% 53% 47% / 50% 30% 70% 50%;
   border: 3px solid var(--primary-color);
   box-shadow: 0 2px 8px solid grey;
 }
+
 .big-box-section .img-box img {
   object-fit: cover;
   object-position: center;
   height: 100%;
- 
+
+}
+
+/*------percent section css end--------*/
+.percent-section .section-head.heading {
+  color: var(--primary-color);
+  font-size: 45px;
+}
+
+.percent-section .section-head .para {
+  color: var(--secondary-color);
+}
+
+.percent-section .section-head .line-container .line {
+  background: var(--secondary-color);
+  height: 3px;
+  position: relative;
+  overflow: hidden;
+}
+
+.percent-section .section-head .line-container .line::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: var(--primary-color);
+  width: 50px;
+  height: 3px;
+  animation: move-line 10s linear infinite;
+  animation-play-state: running;
+}
+
+@keyframes move-line {
+  0% {
+    top: 0;
+    left: 0;
+  }
+
+  50% {
+    top: 0;
+    left: 92%;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+
 }
 
 .about-section {
@@ -177,6 +249,7 @@ img {
   min-height: 400px;
   position: relative;
 }
+
 .about-section .bg-overlay {
   position: absolute;
   top: 0;
@@ -185,21 +258,23 @@ img {
   height: 100%;
   background: rgba(13, 172, 235, 0.5);
 }
+
 .about-section .heading h1 {
   color: white;
   font-size: 60px;
 }
+
 .about-section .para p {
   color: white;
   font-size: 20px;
 }
 
-.counter-number-section{
+.counter-number-section {
   background: url('/images/credit-card-img.jpg');
   background-size: cover;
   background-attachment: fixed;
 }
-.counter-number-section .bg-overlay{
+
+.counter-number-section .bg-overlay {
   background: rgba(0, 0, 0, 0.5);
 }
-

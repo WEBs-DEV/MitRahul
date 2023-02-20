@@ -39,10 +39,10 @@
                     </div>
                     <div class="col-md-6 contact">
                         <div data-aos="fade-left" data-aos="fade-left" data-aos-duration="1500">
-                            <form action="">
+                            <form action="mail.php"  method="POST">
                                 <div class="Name form-group mb-4">
                                     <label for="name">Enter Your Name</label>
-                                    <input type="email" placeholder="Name" id="name" name="name" class="form-control"
+                                    <input type="text" placeholder="Name" id="name" name="name" class="form-control"
                                         required />
                                 </div>
                                 <div class="email form-group mb-4">
@@ -52,11 +52,11 @@
                                 </div>
                                 <div class="message form-group mb-4">
                                     <label for="message">Your Message</label>
-                                    <textarea type="text" placeholder="Message" rows="4" id="message"
+                                    <textarea type="text" placeholder="Message" rows="4" id="message" name="message"
                                         class="form-control"></textarea>
                                 </div>
                                 <div class="submit form-group ">
-                                    <input type="submit" value="Send Message" id="submit"
+                                    <input type="submit" value="Send Message" id="submit" 
                                         class="btn fs-6 fw-bold form-control" />
                                 </div>
                             </form>

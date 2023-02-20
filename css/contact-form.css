@@ -27,7 +27,7 @@ body {
   .contact-section .submit input {
     background: var(--primary-color);
     color: white;
-  
+    
   }
 
   .contact-section .submit input:hover {
