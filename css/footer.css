@@ -23,7 +23,10 @@ p{
 
 footer{
     background-color:  var(--secondary-color);
-    background: rgb(45, 71, 73);
+    background: url('/images/footer-bg.png');
+    background-size: cover;
+    background-position: bottom;
+    
 }
 footer .nav-link{
     color: white;

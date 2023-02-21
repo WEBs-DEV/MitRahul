@@ -27,10 +27,13 @@ img {
 
 /*-------all services section css start--------*/
 .all-services-section {
-  background: url(/images/all-service-bg.jpg);
-  background-position: top center;
+  background: url('/images/skill-bg.png');
+  background-position: center;
   background-size: cover;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+.all-services-section .bg-overlay{
+
 }
 
 .all-services-section img {
@@ -42,9 +45,9 @@ img {
 }
 
 .all-services-section .section-para {
-  color: black;
-  font-size: 18px;
-  font-weight: 600;
+  color: var(--secondary-color);
+  font-size: 25px;
+  font-weight:bold;
 }
 
 .all-services-section .service-box {
@@ -80,7 +83,10 @@ img {
 
 /*-------credit card section css start--------*/
 .credit-card-section {
-  background: linear-gradient(to right, rgba(13, 172, 235, 0.2), rgba(13, 172, 235, 0.4), rgba(13, 172, 235, 0.6));
+  background: url('/images/blog-bg.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .credit-card-section .section-head .heading h1 {
@@ -89,7 +95,7 @@ img {
 }
 
 .credit-card-section .section-head .para {
-  color: black;
+  color: var(--secondary-color);
 }
 
 .credit-card-section .para {
@@ -197,7 +203,12 @@ img {
 }
 
 /*------percent section css end--------*/
-.percent-section .section-head.heading {
+.percent-section{
+  background: url('/images/skill-bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.percent-section .section-head .heading {
   color: var(--primary-color);
   font-size: 45px;
 }
@@ -208,7 +219,7 @@ img {
 
 .percent-section .section-head .line-container .line {
   background: var(--secondary-color);
-  height: 3px;
+  height: 4px;
   position: relative;
   overflow: hidden;
 }
@@ -220,7 +231,7 @@ img {
   left: 0;
   background: var(--primary-color);
   width: 50px;
-  height: 3px;
+  height: 4px;
   animation: move-line 10s linear infinite;
   animation-play-state: running;
 }
@@ -240,6 +251,64 @@ img {
     left: 0;
   }
 
+}
+
+.percent-section .progress-bar-container .title{
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 17px;
+  
+}
+.percent-section .progress-container {
+  width: 100%;
+  overflow: hidden;
+}
+.percent-section .progress-bar-container .bar {
+  margin: 5px 0;
+  margin-bottom: 15px;
+  position: relative;
+  color: var(--secondary-color);
+  background: var(--primary-color);
+  box-shadow: 0 1px 3px grey;
+  height: 3px;
+}
+.percent-section .progress-bar-container .bar-90{
+  position: absolute;
+  bottom: 140%;
+  left: 90%;
+}
+.percent-section .progress-bar-container .bar-85{
+  position: absolute;
+  bottom: 140%;
+  left: 85%;
+}
+.percent-section .progress-bar-container .bar-80{
+  position: absolute;
+  bottom: 140%;
+  left: 80%;
+}
+.percent-section .img-container .jumping-ball{
+  position: absolute;
+  bottom: 5%;
+  left: 40%;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  background: var(--primary-color);
+  animation: jumping-ball 3s linear infinite;
+}
+
+@keyframes jumping-ball{
+  0%{
+    bottom: 5%;
+    height: 30px;
+    width: 30px;
+  }
+  50%{
+    bottom: 50%;
+    height: 50px;
+   width: 50px;
+  }
 }
 
 .about-section {
