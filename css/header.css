@@ -8,7 +8,8 @@
     letter-spacing: 1px;
     font-family: 'Poppins', sans-serif;
 }
-:root{
+
+:root {
     --primary-color: rgb(13, 172, 235);
     --secondary-color: rgb(103, 101, 101);
 }
@@ -21,7 +22,7 @@ img {
     width: 100%;
 }
 
-#hero-main{
+#hero-main {
     min-height: 100vh;
     position: relative;
     z-index: 1;
@@ -32,13 +33,13 @@ img {
 header .custom-bg-color {
     background: rgba(255, 255, 255, 0.6);
 }
-header img{
-    width: 300px;
+
+header img {
+    width: 250px;
 }
 
-
 header .nav-link {
-    color:black;
+    color: black;
     font-size: 16px;
 }
 
@@ -47,7 +48,7 @@ header .nav-link:hover {
 }
 
 header .get-btn {
-    color: white; 
+    color: white;
     background: var(--primary-color);
     border-radius: 4px;
 }
@@ -56,16 +57,20 @@ header .get-btn:hover {
     color: var(--primary-color);
     background: var(--secondary-color);
 }
+
 /*-------header end-------*/
 
 /*-------navbar start-------*/
-nav .row{
+nav .row {
     background-color: var(--secondary-color);
+    background: rgb(26, 26, 26);
 }
 
-nav img{
-    width: 150px;
+nav img {
+    width: 180px;
+    margin-left: 5px;
 }
+
 nav button span i {
     font-size: 30px;
     color: white;
@@ -78,49 +83,49 @@ nav ul li {
 nav ul li .nav-link {
     font-size: 16px;
     color: white;
+    margin-left: 5px;
 }
-nav ul li .nav-link:hover{
+
+nav ul li .nav-link:hover {
     color: var(--primary-color);
 }
 
-nav .dropdown:hover .dropdown-menu{
+nav .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-nav .dropdown-menu li a{
+nav .dropdown-menu li a {
     color: black;
 }
 
 /*-------navbar end-------*/
 
-#hero-section{
+#hero-section {
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
     width: 100%;
     height: 100%;
-    min-height: 100vh;  
+    height: 100%;
 }
 
 #carouselExampleCaptions {
     z-index: 9;
     min-height: 100vh;
-    max-height: 100%;
     position: relative;
 }
-#carouselExampleCaptions .carousel-inner .carousel-item{
+
+#carouselExampleCaptions .carousel-inner .carousel-item {
     overflow: hidden;
 }
 
 #carouselExampleCaptions .carousel-inner .carousel-item img {
     min-height: 100vh;
-    max-height: 100vh;
+    -o-object-position: center;
+    object-fit: cover;
 }
 
-html,body{
-    overflow-x: hiddn;
-}
 #carouselExampleCaptions .row .slide-content {
     position: absolute;
     top: 0;
@@ -128,15 +133,16 @@ html,body{
     margin-left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0,0.4);
+    background: rgba(0, 0, 0, 0.4);
 }
 
-#carouselExampleCaptions h2 {
-    margin-top: 15%;
+#carouselExampleCaptions .slide-content h2 {
+    margin-top: 20%;
     font-size: 40px;
     color: var(--primary-color);
     line-height: 45px;
 }
+
 #carouselExampleCaptions .para {
     font-size: 100px;
     font-weight: 700;
@@ -144,25 +150,115 @@ html,body{
     line-height: 70px;
     margin-bottom: 30px;
 }
+
 #carouselExampleCaptions .para1 {
     font-size: 20px;
     color: white;
     line-height: 30px;
     margin-bottom: 30px;
 }
-.slide-content .contact-btn{
+
+.slide-content .contact-btn {
     margin-left: 200px;
 }
 
 .slide-content .contact-btn a {
     text-decoration: none;
     font-size: 18px;
-    color:white;
+    color: white;
     padding: 10px 30px;
-    background-color:var(--primary-color);
+    background-color: var(--primary-color);
 }
+
 .slide-content .contact-btn a:hover {
-    background-color:var(--secondary-color);
+    background-color: var(--secondary-color);
     color: var(--primary-color);
 }
 
+
+/*------------------------media query start---------------------*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) and (max-width:1200px) {
+        
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+    #carouselExampleCaptions .slide-content h2 {
+        margin-top: 30%;
+        font-size: 35px;
+    }
+    
+    #carouselExampleCaptions .para {
+        font-size: 70px;
+        line-height: 70px;
+        margin-bottom: 20px;
+    }
+    .slide-content .contact-btn {
+        margin: auto;
+    }
+
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width:767px) {
+
+    #carouselExampleCaptions .slide-content h2 {
+        margin-top: 30%;
+        font-size: 30px;
+        line-height: 30px;
+    }
+    
+    #carouselExampleCaptions .para {
+        font-size: 60px;
+        line-height: 60px;
+        margin-bottom: 20px;
+    }
+    
+    #carouselExampleCaptions .para1 {
+        font-size: 18px;
+    }
+    
+    .slide-content .contact-btn {
+        margin: auto;
+    }
+    
+    .slide-content .contact-btn a {
+        text-decoration: none;
+        font-size: 15px;
+        padding: 7px 20px;
+    }
+ 
+}
+
+@media only screen and (max-width:420px) {
+    #carouselExampleCaptions .slide-content h2 {
+        margin-top: 40%;
+        font-size: 25px;
+        line-height: 25px;
+    }
+    
+    #carouselExampleCaptions .para {
+        font-size: 50px;
+        line-height: 50px;
+        margin-bottom: 10px;
+    }
+    
+    #carouselExampleCaptions .para1 {
+        font-size: 18px;
+        color: white;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    
+}
