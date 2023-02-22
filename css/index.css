@@ -40,8 +40,9 @@ img {
   width: 100px;
 }
 
-.all-services-section .section-heading {
+.all-services-section .section-heading h1 {
   color: var(--primary-color);
+  font-size: 45px
 }
 
 .all-services-section .section-para {
@@ -91,7 +92,7 @@ img {
 
 .credit-card-section .section-head .heading h1 {
   color: var(--primary-color);
-  font-size: 50px;
+  font-size:45px;
 }
 
 .credit-card-section .section-head .para {
@@ -152,7 +153,7 @@ img {
 .main-services-section .title h1 {
   color: white;
   font-weight: 600;
-  font-size: 50px;
+  font-size: 45px;
 }
 
 .main-services-section .para {
@@ -173,8 +174,12 @@ img {
 }
 
 .big-box-section {
-  background: rgb(195, 195, 195);
+  background: rgb(230, 230, 230);
 }
+.big-box-section .heading h1{
+  font-size: 45px;
+  color: var(--primary-color);
+} 
 
 .big-box-section .read-more-btn .btn {
   background: var(--primary-color);
@@ -208,7 +213,7 @@ img {
   background-position: center;
   background-repeat: no-repeat;
 }
-.percent-section .section-head .heading {
+.percent-section .section-head .heading h1{
   color: var(--primary-color);
   font-size: 45px;
 }
@@ -312,32 +317,6 @@ img {
   }
 }
 
-.about-section {
-  background: url("/images/real-state-img/banner-img-4.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  min-height: 400px;
-  position: relative;
-}
-
-.about-section .bg-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(13, 172, 235, 0.5);
-}
-
-.about-section .heading h1 {
-  color: white;
-  font-size: 60px;
-}
-
-.about-section .para p {
-  color: white;
-  font-size: 20px;
-}
 
 .counter-number-section {
   background: url('/images/credit-card-img.jpg');

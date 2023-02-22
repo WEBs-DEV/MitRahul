@@ -19,8 +19,9 @@ body {
   overflow-x: hidden;
 }
 
-.contact-section .section-heading {
+.contact-section .section-heading h1{
     color: var(--primary-color);
+    font-size: 45px;
   }
   .contact-section .submit input {
     background: var(--primary-color);

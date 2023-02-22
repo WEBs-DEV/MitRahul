@@ -29,7 +29,7 @@ img {
 }
 .banner-section .left-content .title h1{
     color: var(--primary-color);
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .banner-section .left-content .title-para{
@@ -56,6 +56,10 @@ img {
 }
 .about-section .about-content .heading{
     color: var(--primary-color);
+}
+.about-section .about-content .para h2{
+    font-size: 40px;
+
 }
 
 .about-section .about-content .sub-para{
