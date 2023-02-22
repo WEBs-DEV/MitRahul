@@ -173,7 +173,7 @@ img {
     }
 }
 
-/*-------abut us css end--------*/
+/*-------about us css end--------*/
 
 
 .main-services-section {
@@ -181,17 +181,14 @@ img {
     background-position: center;
     background-size: cover;
     position: relative;
-    min-height: 250px;
-    display: flex;
-
 }
 
 .main-services-section .bg-overlay {
-    position: absolute;
+    position: absolut;
     top: 0;
     left: 0;
     width: 100%;
-    height: 250px;
+    height: 100%;
     background: rgba(0, 0, 0, 0.4);
 }
 

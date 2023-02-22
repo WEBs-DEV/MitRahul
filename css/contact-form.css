@@ -19,11 +19,9 @@ body {
   overflow-x: hidden;
 }
 
-
 .contact-section .section-heading {
     color: var(--primary-color);
   }
-  
   .contact-section .submit input {
     background: var(--primary-color);
     color: white;

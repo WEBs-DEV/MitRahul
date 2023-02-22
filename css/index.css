@@ -301,13 +301,14 @@ img {
 @keyframes jumping-ball{
   0%{
     bottom: 5%;
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
   }
   50%{
-    bottom: 50%;
-    height: 50px;
-   width: 50px;
+    bottom: 45%;
+    height: 40px;
+   width: 40px;
+   border-radius: 25%;
   }
 }
 
@@ -346,4 +347,43 @@ img {
 
 .counter-number-section .bg-overlay {
   background: rgba(0, 0, 0, 0.5);
+}
+
+
+/*------------------------media query start---------------------*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) and (max-width:1200px) {
+        
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width:1024px) {
+ 
+
+
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width:767px) {
+  .percent-section{
+    background: url('/images/skill-bg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+ 
+}
+
+@media only screen and (max-width:420px) {
+
 }
