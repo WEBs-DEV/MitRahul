@@ -57,8 +57,14 @@ img {
 }
 
 .service-section .container .row .service-box:hover{
-    transform: perspective(1000px) translateZ(-20px) rotateY(-50deg);
-    background: rgb(80, 44, 157);
+    transform: perspective(1000px) translateZ(-20px) rotateY(-30deg);
+    background:var(--primary-color);
+}
+.service-section .container .row .service-box:hover  h4{
+    color: white;
+}
+.service-section .container .row .service-box:hover  p{
+    color: white;
 }
 
 /*===========service-section-end====================*/
