@@ -24,10 +24,10 @@
 
 .photo-gallery h1 {
     font-weight: normal;
-    font-size: 35px;
+    font-size: 45px;
     position: relative;
     margin: 40px 0;
-    font-weight: bold;
+    font-weight: 600;
     color: var(--primary-color);
 }
 
@@ -282,11 +282,7 @@
     }
 
     .photo-gallery h1 {
-        font-weight: normal;
-        font-size: 30px;
-        position: relative;
-        margin: 35px 0;
-        color: var(--primary-color);
+        font-size: 35px;
     }
     
     

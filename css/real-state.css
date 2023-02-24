@@ -1,275 +1,341 @@
 /*-------Google fonts imported--------*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    letter-spacing: 1px;
-    font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
-    --primary-color: rgb(13, 172, 235);
-    --secondary-color: rgb(103, 101, 101);
+  --primary-color: rgb(13, 172, 235);
+  --secondary-color: rgb(103, 101, 101);
 }
 
 html,
 body {
-    background: rgb(255, 255, 255);
-    overflow-x: hidden;
+  background: rgb(255, 255, 255);
+  overflow-x: hidden;
 }
 
 img {
-    width: 100%;
+  width: 100%;
 }
 
 /*-------main focus css start--------*/
-.main-focus-section .section-heading h1{
-    color: var(--primary-color);
+.main-focus-section .section-heading h1 {
+  color: var(--primary-color);
+  font-size: 45px;
 }
 .main-focus-section .service {
-    box-shadow: 0px 1px 4px grey;
-    padding: 30px 5px;
-    border-radius: 5px;
-    position: relative;
-    transition: all 0.2s;
-    overflow: hidden;
+  box-shadow: 0px 1px 4px grey;
+  padding: 15px 5px;
+  border-radius: 5px;
+  position: relative;
+  transition: all 0.2s;
+  overflow: hidden;
 }
-.main-focus-section .service .title{
-    color: var(--primary-color);
+.main-focus-section .service .title {
+  color: var(--primary-color);
 }
-.main-focus-section .service .para{
-    color: var(--secondary-color);
-    font-size: 16px;
+.main-focus-section .service .para {
+  color: var(--secondary-color);
+  font-size: 16px;
 }
-.main-focus-section .service .contact-btn .btn{
-    padding: 4px 15px;
-    color: var(--secondary-color);
-    font-size: 16px;
+.main-focus-section .service .contact-btn .btn {
+  padding: 4px 15px;
+  color: var(--secondary-color);
+  font-size: 16px;
 }
-.main-focus-section .service .contact-btn .btn:hover{
-    color: var(--primary-color);
-    font-weight: bold;
+.main-focus-section .service .contact-btn .btn:hover {
+  color: var(--primary-color);
+  font-weight: bold;
 }
-.main-focus-section .service .find-home .btn{
-    padding: 4px 15px;
-    background: var(--primary-color);
-    font-size: 16px;
-    color: white;
+.main-focus-section .service .find-home .btn {
+  padding: 4px 15px;
+  background: var(--primary-color);
+  font-size: 16px;
+  color: white;
 }
-.main-focus-section .service .find-home .btn:hover{
-    color:var(--primary-color);
-    background: var(--secondary-color);
+.main-focus-section .service .find-home .btn:hover {
+  color: var(--primary-color);
+  background: var(--secondary-color);
 }
-.main-focus-section .service .service-img img{
-    transition: all 0.3s;
+.main-focus-section .service .service-img img {
+  width: 200px;
+  transition: all 0.3s;
 }
-.main-focus-section .service:hover .service-img img{
-    transform: scale(1.2);
+.main-focus-section .service:hover .service-img img {
+  transform: scale(1.2);
 }
 
-.main-focus-section .service::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 4px;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px;
-    background: var(--primary-color);
-    transition: all 0.4s ease-in-out;
+.main-focus-section .service::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 4px;
+  border-bottom-left-radius: 2px;
+  border-bottom-right-radius: 2px;
+  background: var(--primary-color);
+  transition: all 0.4s ease-in-out;
 }
-.main-focus-section .service:hover::after{
-    width: 100%;
+.main-focus-section .service:hover::after {
+  width: 100%;
 }
 
 /*-------main focus css start--------*/
 
 /*-------about us css start--------*/
 .about-section {
-    background: rgba(158, 158, 158, 0.2);
+  background: rgba(158, 158, 158, 0.2);
 }
 
 .about-section .section-heading h1 {
-    color: var(--primary-color);
+  color: var(--primary-color);
+  font-size: 25px;
+}
+.about-section .heading h2 {
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .about-section .para p {
-    color: var(--secondary-color);
-    font-size: 18px;
-    color: whit;
+  color: var(--secondary-color);
+  font-size: 18px;
+  color: whit;
 }
 
 .about-section .btn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 7px 20px;
-    font-size: 17px;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 7px 20px;
+  font-size: 17px;
 }
 
 .about-section .btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 .about-section .about-images .about-12-img {
-    position: absolute;
-    top: 0;
-    border-top-right-radius: 40px;
-    height: 150px;
+  position: absolute;
+  top: 0;
+  border-top-right-radius: 40px;
+  height: 150px;
 }
 
 .about-section .about-images .about-13-img {
-    position: absolute;
-    top: 50%;
-    left: -15%;
-    height: 300px;
-    z-index: 2;
+  position: absolute;
+  top: 50%;
+  left: -15%;
+  height: 300px;
+  z-index: 2;
 }
 
 .about-section .about-images .sun-icon-img {
-    position: absolute;
-    bottom: -40%;
-    left: -25%;
-    width: 55px;
-    z-index: 3;
-    animation: rotate 5s linear infinite;
+  position: absolute;
+  bottom: -40%;
+  left: -25%;
+  width: 55px;
+  z-index: 3;
+  animation: rotate 5s linear infinite;
 }
 
 .about-section .about-images .about-dot-img {
-    position: absolute;
-    bottom: -40%;
-    right: -30%;
-    width: 150px;
-    z-index: 1;
-    animation: move-up-down 8s linear infinite;
+  position: absolute;
+  bottom: -40%;
+  right: -30%;
+  width: 150px;
+  z-index: 1;
+  animation: move-up-down 8s linear infinite;
 }
 
 @keyframes move-up-down {
-
-    50% {
-        transform: translateY(-30%);
-    }
+  50% {
+    transform: translateY(-30%);
+  }
 }
 
-
 .about-section .about-images .about-triangle-img {
-    position: absolute;
-    top: -6%;
-    right: -5%;
-    width: 60px;
-    animation: rotate 8s linear infinite;
+  position: absolute;
+  top: -6%;
+  right: -5%;
+  width: 60px;
+  animation: rotate 8s linear infinite;
 }
 
 @keyframes rotate {
-    0% {
-        transform: rotate(0);
-    }
+  0% {
+    transform: rotate(0);
+  }
 
-    100% {
-        transform: rotate(360deg);
-    }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /*-------about us css end--------*/
 
-
 .main-services-section {
-    background: url('/images/p3.jpg');
-    background-position: center;
-    background-size: cover;
-    position: relative;
+  background: url("/images/p3.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 
 .main-services-section .bg-overlay {
-    position: absolut;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.4);
+  position: absolut;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
 }
 
 .main-services-section .title h1 {
-    color: white;
-    font-weight: 600;
-    font-size: 50px;
+  color: white;
+  font-weight: 600;
+  font-size: 50px;
 }
 
 .main-services-section .para {
-    color: white;
-    font-size: 20px;
+  color: white;
+  font-size: 20px;
 }
 
 .main-services-section .contact-btn .btn {
-    background-color: var(--primary-color);
-    color: white;
-    padding: 7px 20px;
-    font-weight: 600;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 7px 20px;
+  font-weight: 600;
 }
 
 .main-services-section .contact-btn .btn:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 
 /*-------Area section css start--------*/
 
-.area-section .section-heading{
-    color: var(--primary-color);
+.area-section .section-heading {
+  color: var(--primary-color);
+  font-size: 45px;
 }
 
-.area-section .tabs{
-    box-shadow: 1px 1px 3px gray;
-    border-radius: 5px;
+.area-section .tabs {
+  box-shadow: 1px 1px 3px gray;
+  border-radius: 5px;
 }
-.area-section .tabs .tab{
-    color: var(--primary-color);
-    cursor: pointer;
-    padding: 3px 10px;
-    border: 1px solid white;
-    border-radius: 5px;
-    transition: all 0.2s;
+.area-section .tabs .tab {
+  color: var(--primary-color);
+  cursor: pointer;
+  padding: 3px 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+  transition: all 0.2s;
 }
-.area-section .tabs .tab:hover{
-    color: var(--primary-color);
-    border: 1px solid gray;
+.area-section .tabs .tab:hover {
+  color: var(--primary-color);
+  border: 1px solid gray;
 }
 
-.area-section .tabs .non-active-tab{
-    color: var(--secondary-color);
+.area-section .tabs .non-active-tab {
+  color: var(--secondary-color);
 }
 .area-section .contents {
-    color: var(--secondary-color);
+  color: var(--secondary-color);
 }
-.area-section .contents .tab-content{
-    color: var(--secondary-color);
+.area-section .contents .tab-content {
+  color: var(--secondary-color);
 }
-
-.area-section .contents .hide-content{
-    display: none;
-}
-.area-section .contents .content .map-img img{
-    width: 80%;
+.area-section .contents .tab-content .title h3 {
+  font-size: 40px;
 }
 
-.area-section .contents .content .map-features .title{
-    color: var(--primary-color);
+.area-section .contents .hide-content {
+  display: none;
 }
-.area-section .contents .content .map-features .title-para{
-    color: var(--secondary-color);
-    font-size: 18px;
+.area-section .contents .content .map-img img {
+  width: 80%;
 }
 
-.area-section .map-details .map-detail-title{
-    color:  var(--primary-color);
-
+.area-section .contents .content .map-features .title {
+  color: var(--primary-color);
 }
-.area-section .map-details .size{
-    color: var(--secondary-color);
-    
+.area-section .contents .content .map-features .title-para {
+  color: var(--secondary-color);
+  font-size: 18px;
+}
+
+.area-section .map-details .map-detail-title {
+  color: var(--primary-color);
+}
+.area-section .map-details .size {
+  color: var(--secondary-color);
 }
 
 /*-------Area section css end--------*/
+
+/*------------------------media query start---------------------*/
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1201px) {
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1025px) and (max-width: 1200px) {
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 767px) {
+  /*-------main focus css start--------*/
+  .main-focus-section .section-heading h1 {
+    font-size: 35px;
+  }
+
+  .about-section .section-heading h1 {
+    font-size: 25px;
+  }
+  .about-section .heading h2 {
+    font-size: 35px;
+  }
+
+  .about-section .para p {
+    font-size: 18px;
+  }
+
+  .main-services-section .title h1 {
+    font-size: 35px;
+  }
+
+  .main-services-section .para {
+    font-size: 18px;
+  }
+
+  .area-section .section-heading {
+    font-size: 35px;
+  }
+
+  .area-section .tabs .tab {
+    padding: 3px 5px;
+  }
+
+  .area-section .contents .tab-content .title h3 {
+    font-size: 30px;
+  }
+
+  .area-section .contents .content .map-features .title-para {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+}
