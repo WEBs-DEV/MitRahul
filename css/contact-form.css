@@ -32,4 +32,11 @@ body {
   .contact-section .submit input:hover {
     background-color: rgb(46, 124, 46);
   }
+
+  @media screen and (max-width: 768px) {
+    .contact-section .section-heading h1{
+      font-size: 35px;
+    }
+  }
+  
   

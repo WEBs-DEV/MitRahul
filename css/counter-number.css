@@ -18,66 +18,81 @@ body {
   background-color: white;
 }
 
-.counter-container{
-    padding: 80px 0;
+.counter-container {
+  padding: 80px 0;
 }
 .counter-container .section-heading {
-    margin-bottom: 40px;
-    text-align: center;
-    color: white;
-    font-weight: 800;
+  margin-bottom: 40px;
+  text-align: center;
+  color: white;
+  font-weight: 800;
 }
-.counter-container .section-heading h1{
-    font-size: 45px;
-    font-weight: 600;
+.counter-container .section-heading h1 {
+  font-size: 45px;
+  font-weight: 600;
 }
 
-.container-section{
-    display: flex;
-    justify-content: space-around;
-    align-items: stretch;
-    width: 100%;
-    flex-wrap: wrap;
+.container-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: stretch;
+  width: 100%;
+  flex-wrap: wrap;
 }
-.counter-section{
-    background: white;
-    border-radius: 5px;
-    min-width: 150px;
-    flex-basis: 180px;
-    font-size: 2rem;
-    padding: 10px;
-    text-align: center;
-    box-shadow: 0 1px 3px grey;
+.counter-section {
+  background: white;
+  border-radius: 5px;
+  min-width: 150px;
+  flex-basis: 180px;
+  font-size: 2rem;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px grey;
+  margin: 5px;
 }
-.counter-section p{
-    font-size: 24px;
+.counter-section p {
+  font-size: 24px;
 }
-.counter-section .number{
-    color: var(--primary-color);
+.counter-section .number {
+  color: var(--primary-color);
+  font-size: 35px;
+}
+.counter-section i {
+  font-size: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .counter-section {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .counter-container .section-heading h1 {
     font-size: 35px;
-}
-.counter-section i{
+  }
+
+  .counter-section {
+    padding: 5px;
+    margin-bottom: 15px;
+  }
+
+  .counter-section p {
+    font-size: 20px;
+  }
+  .counter-section .number {
+    font-size: 25px;
+  }
+  .counter-section i {
     font-size: 30px;
+  }
 }
 
-@media screen and (max-width:1200px){
-    .counter-section{
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and (max-width:768px){
-    .counter-section{
-        padding: 5px;
-        margin-bottom: 15px;
-    }
-}
-
-@media screen and (max-width:420px){
-    .counter-section{
-        padding: 2px 5px;
-        margin-bottom: 10px;
-        min-width: 100px;
-        flex-basis:130px ;
-    }
+@media screen and (max-width: 420px) {
+  .counter-section {
+    padding: 2px 5px;
+    margin-bottom: 10px;
+    min-width: 100px;
+    flex-basis: 130px;
+  }
 }
