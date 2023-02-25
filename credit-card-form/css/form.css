@@ -1,0 +1,145 @@
+/*-------Google fonts imported--------*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: "Poppins", sans-serif;
+}
+
+:root {
+    --primary-color: rgb(13, 172, 235);
+    --secondary-color: rgb(103, 101, 101);
+}
+
+html,
+body {
+    background: rgb(255, 255, 255);
+}
+
+.container-section {
+    position: relative;
+    max-width: 900px;
+    border-radius: 6px;
+    padding: 30px;
+    margin: auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+}
+
+.container-section header {
+    position: relative;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+.container-section form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 490px;
+}
+
+.container-section form .Id-details {
+    margin-top: 20px;
+}
+
+.container-section form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 10px 0;
+    color: var(--secondary-color);
+}
+
+.container-section form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--secondary-color);
+}
+
+.input-field input {
+    outline: none;
+    font-size: 14px;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    border: 1px solid #aaa;
+    padding: 4px;
+    margin: 10px;
+    text-align: center;
+}
+
+.input-field input:is(:focus, :valid) {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field input[type="date"] {
+    color: #707070;
+}
+
+.input-field input[type="date"]:valid {
+    color: #333;
+}
+
+.container-section form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-size: 17px;
+    padding: 6px 35px;
+    font-weight: 600;
+    color: var(--secondary-color);
+    border-radius: 5px;
+    margin: 10px auto;
+    background-color: var(--primary-color);
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+form button i {
+    margin: 0 6px;
+}
+
+@media (max-width: 750px) {
+    .container-section form {
+        overflow-y: scroll;
+    }
+
+    .container-section form::-webkit-scrollbar {
+        display: none;
+    }
+
+    form .fields .input-field {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+    form .fields .input-field {
+        width: 100%;
+    }
+
+}
