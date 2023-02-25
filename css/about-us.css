@@ -61,7 +61,6 @@ img {
 }
 .about-section .about-content .para h1{
     font-size: 45px;
-
 }
 
 .about-section .about-content .sub-para{
@@ -94,26 +93,23 @@ img {
     }
     .about-section .about-content .facilities .facility h5{
         color: var(--secondary-color);
-        font-size: 17px;
+        font-size: 18px;
     }
     
 }
-
 @media only screen and (max-width: 768px) {
-    .banner-section .left-content .title h1{
-        color: var(--primary-color);
-        font-size: 40px;
+    .banner-section .left-content .title h1 {
+      color: var(--primary-color);
+      font-size: 40px;
     }
-    .about-section .about-content .facilities .facility h5{
-        color: var(--secondary-color);
-        font-size: 16px;
+    .about-section .about-content .facilities .facility h5 {
+      color: var(--secondary-color);
+      font-size: 18px;
     }
-    
-    .banner-section .left-content .title-para h5{
-        color: var(--secondary-color);
-        font-size: 15px;
+  
+    .banner-section .left-content .title-para h5 {
+      color: var(--secondary-color);
+      font-size: 15px;
     }
-
-}
-
+  }
 /*------------------------media query end---------------------*/

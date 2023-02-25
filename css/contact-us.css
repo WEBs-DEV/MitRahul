@@ -11,7 +11,7 @@
 }
 :root {
   --primary-color: rgb(13, 172, 235);
-  --primary-color:rgb(45, 71, 73);
+  --primary-color: rgb(45, 71, 73);
   --secondary-color: rgb(103, 101, 101);
 }
 html,
@@ -25,46 +25,45 @@ img {
 }
 
 /* ---------about-banner css start-------- */
-.banner-section{
-    background: rgb(249, 249, 249);
+.banner-section {
+  background: rgb(249, 249, 249);
 }
-.banner-section .left-content .title h1{
-    color: var(--primary-color);
-    font-size: 50px;
+.banner-section .left-content .title h1 {
+  color: var(--primary-color);
+  font-size: 50px;
 }
 
-.banner-section .left-content .title-para{
-    color: var(--secondary-color);
+.banner-section .left-content .title-para {
+  color: var(--secondary-color);
 }
-.banner-section .right-img img{
-   width: 250px; 
-   transition: all 0.4s;
+.banner-section .right-img img {
+  width: 250px;
+  transition: all 0.4s;
 }
-.banner-section .right-img:hover img{
-    transform: scale(1.2);
- }
+.banner-section .right-img:hover img {
+  transform: scale(1.2);
+}
 
 /* ---------about-banner css end------- */
 
-
 /* ---------contact css start------- */
-.contact-section .section-heading {
+.contact-section .section-heading h1 {
   color: var(--primary-color);
+  font-size: 45px;
 }
-.contact-section .contact-information p{
-  font-size: 19px;
+.contact-section .contact-information p {
+  font-size: 18px;
 }
-.contact-section .contact-information p i{
-  font-size: 20px;
+.contact-section .contact-information p i {
+  font-size: 18px;
   color: var(--primary-color);
   margin-right: 5px;
 }
 
-
-.contact-section label{
-  font-size: 20px;
+.contact-section label {
+  font-size: 18px;
 }
-.contact-section .form-control{
+.contact-section .form-control {
   font-size: 16px;
 }
 .contact-section .submit input {
@@ -77,3 +76,27 @@ img {
 }
 
 /* ---------contact css end------- */
+
+/*------------------------media query start---------------------*/
+
+@media only screen and (max-width: 768px) {
+  .banner-section .left-content .title h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+  }
+  .about-section .about-content .facilities .facility h5 {
+    color: var(--secondary-color);
+    font-size: 16px;
+  }
+
+  .banner-section .left-content .title-para h5 {
+    color: var(--secondary-color);
+    font-size: 15px;
+  }
+
+  /* ---------contact css start------- */
+  .contact-section .section-heading h1 {
+    color: var(--primary-color);
+    font-size: 35px;
+  }
+}

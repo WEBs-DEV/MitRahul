@@ -54,20 +54,41 @@ img {
     top: 45%;
     right: 10%;
 }
-.about-section .about-content .heading{
+.about-section .about-content .heading h3{
     color: var(--primary-color);
+    font-size: 30px;
 }
-.about-section .about-content .para h2{
-    font-size: 40px;
-
+.about-section .about-content .para h1{
+    font-size: 45px;
 }
 
 .about-section .about-content .sub-para{
     color: var(--secondary-color);
+    font-size: 20px;
 }
 .about-section .about-content .facilities .facility-img  img{
-    width: 80px;
+    width: 100%;
 }
-.about-section .about-content .facilities .facility {
+.about-section .about-content .facilities .facility h5{
     color: var(--secondary-color);
+    font-size: 20px;
+}
+
+/*------------------------media query start---------------------*/
+/* Medium devices (landscape tablets, 768px and up) */
+
+@media only screen and (max-width: 768px) {
+  .banner-section .left-content .title h1 {
+    color: var(--primary-color);
+    font-size: 40px;
+  }
+  .about-section .about-content .facilities .facility h5 {
+    color: var(--secondary-color);
+    font-size: 18px;
+  }
+
+  .banner-section .left-content .title-para h5 {
+    color: var(--secondary-color);
+    font-size: 15px;
+  }
 }
