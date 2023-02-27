@@ -25,7 +25,7 @@ body {
     position: relative;
     max-width: 900px;
     border-radius: 6px;
-    padding: 15px;
+    padding: 30px 20px;
     margin: auto;
     box-shadow: 0 5px 10px rgb(219, 219, 219);
 }
@@ -41,7 +41,33 @@ body {
 .container-section form {
     position: relative;
     margin-top: 16px;
-    min-height: 490px;
+   
+}
+.bank-list h3{
+    color: var(--secondary-color);
+    font-size: px;
+    margin-bottom: 10px;
+}
+.bank-list{
+    margin-bottom: 15px;
+}
+.bank-list select{
+    text-align: left;
+    border: 1.5px solid var(--secondary-color);
+    border-radius: 5px;
+    font-size: 15px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding:2px 40px;
+}
+.bank-list select option{
+    border-radius: 0;
+
+}
+.bank-list select option:hover{
+    color: var(--primary-color);
+    background: var(--primary-color);
+    padding: 6px 25px;
 }
 
 .container-section form .Id-details {
@@ -90,10 +116,6 @@ form .fields .input-field {
 
 .input-field input:is(:focus, :valid) {
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
-}
-
-.input-field input[type="date"]:valid {
-    color:;
 }
 
 .container-section form button {

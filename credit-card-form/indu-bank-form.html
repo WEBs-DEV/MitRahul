@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/form.css">
+    <title>Credit Card</title>
+</head>
+
+<body>
+    <div class="container-section">
+        <header>Registration For Personal Loan</header>
+        <form action="indu-bank.php" method="POST" enctype="multipart/form-data">
+            <div class="form first">
+                <div class="details personal">
+                    <div class="bank-list">
+                        <h3>Indusland Bank</h3>
+                        <select name="bank" id="select-bank" onchange="window.location.href=this.value;">
+                            <option value="axis-bank-form.html">Axis Bank</option>
+                            <option value="indu-bank-form.html">Indusland Bank</option>
+                            <option value="au-bank-form.html">AU Bank</option>
+                        </select>
+                    </div>
+                    <span class="title">Personal Details</span>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" name="name" placeholder="Enter The First Name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" name="lname" placeholder="Enter The Last Name" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" name="phone" placeholder="Enter Your Number" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" name="email" placeholder="Enter Your Mail" required>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Gender</label>
+                            <input type="text" name="gender" placeholder="Enter Your Gender" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Pan Card</label>
+                            <input type="text" id="Upload" name="pancard" placeholder="Enter Your Pancard Number" required>
+                        </div>
+                    </div>
+                </div>
+                <button class="nextBtn" name="send" value="send">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        function banks(){
+            var select_bank = document.getElementById('select-bank');
+            var bank = select_bank.value;
+            console.log(bank);
+        }
+    </script>
+</body>
+
+</html>

@@ -31,21 +31,21 @@ require 'PHPMailer/src/SMTP.php';
      $mail->setFrom('amazingcreativeworld@gmail.com', 'Amazing Creative World');
      $mail->addAddress('amazingcreativeworld@gmail.com');     //Add a recipient
 
-   if($_FILES['pancard']['name']!=null){
+ /*   if($_FILES['pancard']['name']!=null){
     if(move_uploaded_file($_FILES['pancard']['tmp_name'],"uploads/{$_FILES['pancard']['name']}")){
       $mail->addAttachment("uploads/{$_FILES['pancard']['name']}");    //Optional name
     }  
-   }
+   } */
 
      //Content
      $mail->isHTML(true);                                  //Set email format to HTML
      $mail->Subject = 'Amazing Creative World';
-     $mail->Body    = 'First Name :' .$name.' ' .$lname.'<br> Phone :'  .$phone. ' <br> E-Mail :' .$email. '<br> Gender :'  .$gender. '<br> Bank Statement :' .$statement. '<br> Salary Slip :'  .$slip. ' <br> Address :' .$address. ' <br> Job Post :'  .$job. ' <br> Company Name :' .$company. '<br> Salary :'  .$salary;
+     $mail->Body    = 'First Name :' .$name.' ' .$lname.'<br> Phone :'  .$phone. ' <br> E-Mail :' .$email. '<br> Gender :'  .$gender. '<br> Pancard No. :'  .$pancard ;
    //  $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
  
      $mail->send();
      echo '<script>alert("Your message has been sent successfully");</script>';
-     echo '<script> document.location = "form.html";</script>';
+     echo '<script> window.location.href = "https://d0l.in/B/YruAuuA/E/BE";</script>';
  } catch (Exception $e) {
      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
  }
