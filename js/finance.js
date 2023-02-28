@@ -7,7 +7,8 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.logo-area').slick({
       slidesToShow: 6,
-      slidesToScroll: 1,
+      slidesToScroll: 0,
+      centeralSlide:false,
       autoplay: true,
       autoplaySpeed: 1500,
       arrows: false,
@@ -16,7 +17,7 @@ $(document).ready(function () {
       responsive: [{
           breakpoint: 768,
           settings: {
-              slidesToShow: 3
+              slidesToShow: 1
           }
       }]
 

@@ -96,7 +96,7 @@ img {
 
 /* ---------indusland-section css end------- */
 .indusland-section{
-  background: rgb(249, 249, 249); 
+  background: url('/images/footer-bg.png');
 }
 .indusland-section .indusland-img img{
   width: 80%;
@@ -111,12 +111,13 @@ img {
   color: var(--primary-color);
   font-size: 30px;
 }
-.indusland-section .indusland-content .para h1{
+.indusland-section .indusland-content .para h2{
   font-size: 45px;
+  color: white;
 }
 
 .indusland-section .indusland-content .sub-para{
-  color: var(--secondary-color);
+  color: whitesmoke;
   font-size: 20px;
 }
 .indusland-section .apply-now .btn{
@@ -132,14 +133,11 @@ img {
   width: 100%;
 }
 .indusland-section .indusland-content .facilities .facility h5{
-  color: var(--secondary-color);
+  color: whitesmoke;
   font-size: 20px;
 }
 
 /* ---------au-section css end------- */
-.au-section{
-  background: url('/images/');
-}
 .au-section .au-img img{
   width: 80%;
 }
