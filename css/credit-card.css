@@ -23,7 +23,7 @@ img {
   width: 100%;
 }
 
-/* ---------about-banner css start-------- */
+/* ---------axis-banner css start-------- */
 .banner-section{
      background: rgb(249, 249, 249); 
 }
@@ -32,8 +32,18 @@ img {
     font-size: 45px;
 }
 
-.banner-section .left-content .title-para{
+.banner-section .left-content .title-para p{
     color: var(--secondary-color);
+    font-size: 22px;
+}
+.banner-section .left-content  .apply-now .btn{
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 16px;
+}
+.banner-section .left-content  .apply-now .btn:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
 }
 .banner-section .right-img img{
    width: 100%; 
@@ -43,35 +53,129 @@ img {
     transform: scale(1.1);
  }
 
-/* ---------about-banner css end------- */
+/* ---------axis-section css end------- */
 
-.about-section .about-img img{
+.axis-section .axis-img img{
     width: 80%;
 }
-.about-section .about-img .upper-img img{
+.axis-section .axis-img .upper-img img{
     position: absolute;
     width: 60%;
     top: 45%;
     right: 10%;
 }
-.about-section .about-content .heading h3{
+.axis-section .axis-content .heading h3{
     color: var(--primary-color);
     font-size: 30px;
 }
-.about-section .about-content .para h1{
+.axis-section .axis-content .para h1{
     font-size: 45px;
 }
 
-.about-section .about-content .sub-para{
+.axis-section .axis-content .sub-para{
     color: var(--secondary-color);
     font-size: 20px;
 }
-.about-section .about-content .facilities .facility-img  img{
+.axis-section .apply-now .btn{
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 16px;
+}
+.axis-section .apply-now .btn:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.axis-section .axis-content .facilities .facility-img  img{
     width: 100%;
 }
-.about-section .about-content .facilities .facility h5{
+.axis-section .axis-content .facilities .facility h5{
     color: var(--secondary-color);
     font-size: 20px;
+}
+
+
+/* ---------indusland-section css end------- */
+.indusland-section{
+  background: rgb(249, 249, 249); 
+}
+.indusland-section .indusland-img img{
+  width: 80%;
+}
+.indusland-section .indusland-img .upper-img img{
+  position: absolute;
+  width: 60%;
+  top: 45%;
+  right: 10%;
+}
+.indusland-section .indusland-content .heading h3{
+  color: var(--primary-color);
+  font-size: 30px;
+}
+.indusland-section .indusland-content .para h1{
+  font-size: 45px;
+}
+
+.indusland-section .indusland-content .sub-para{
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+.indusland-section .apply-now .btn{
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 16px;
+}
+.indusland-section .apply-now .btn:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.indusland-section .indusland-content .facilities .facility-img  img{
+  width: 100%;
+}
+.indusland-section .indusland-content .facilities .facility h5{
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+
+/* ---------au-section css end------- */
+.au-section{
+  background: url('/images/');
+}
+.au-section .au-img img{
+  width: 80%;
+}
+.au-section .au-img .upper-img img{
+  position: absolute;
+  width: 60%;
+  top: 45%;
+  right: 10%;
+}
+.au-section .au-content .heading h3{
+  color: var(--primary-color);
+  font-size: 30px;
+}
+.au-section .au-content .para h1{
+  font-size: 45px;
+}
+
+.au-section .au-content .sub-para{
+  color: var(--secondary-color);
+  font-size: 20px;
+}
+.au-section .apply-now .btn{
+  color: white;
+  background-color: var(--primary-color);
+  font-size: 16px;
+}
+.au-section .apply-now .btn:hover{
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+.au-section .au-content .facilities .facility-img  img{
+  width: 100%;
+}
+.au-section .au-content .facilities .facility h5{
+  color: var(--secondary-color);
+  font-size: 20px;
 }
 
 /*------------------------media query start---------------------*/
@@ -82,13 +186,20 @@ img {
     color: var(--primary-color);
     font-size: 40px;
   }
-  .about-section .about-content .facilities .facility h5 {
-    color: var(--secondary-color);
-    font-size: 18px;
-  }
-
   .banner-section .left-content .title-para h5 {
     color: var(--secondary-color);
     font-size: 15px;
+  }
+  .axis-section .axis-content .facilities .facility h5 {
+    color: var(--secondary-color);
+    font-size: 18px;
+  }
+  .indusland-section .indusland-content .facilities .facility h5 {
+    color: var(--secondary-color);
+    font-size: 18px;
+  }
+  .au-section .au-content .facilities .facility h5 {
+    color: var(--secondary-color);
+    font-size: 18px;
   }
 }

@@ -19,9 +19,13 @@ body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
+    background: url('/images/creditformbg.jpg');
+    object-fit:cover;
+    object-position: top;
 }
 
 .container-section {
+    background: rgb(249, 249, 249); 
     position: relative;
     max-width: 900px;
     border-radius: 6px;

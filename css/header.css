@@ -30,7 +30,6 @@ img {
 }
 
 /*-------header start-------*/
-
 header .custom-bg-color {
     background: rgba(255, 255, 255, 0.6);
 }
@@ -62,6 +61,7 @@ header .get-btn:hover {
 /*-------header end-------*/
 
 /*-------navbar start-------*/
+
 nav .row {
     background-color: var(--secondary-color);
     background: rgb(26, 26, 26);
