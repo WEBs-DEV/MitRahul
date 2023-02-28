@@ -10,7 +10,6 @@ use PHPMailer\PHPMailer\Exception;
 require 'PHPMailer/src/Exception.php';
 require 'PHPMailer/src/PHPMailer.php';
 require 'PHPMailer/src/SMTP.php';
-
   if(isset($_POST['send'])){
     
 //Create an instance; passing `true` enables exceptions
@@ -45,7 +44,7 @@ require 'PHPMailer/src/SMTP.php';
  
      $mail->send();
      echo '<script>alert("Your message has been sent successfully");</script>';
-      echo '<script> window.location.href = "https://d0l.in/B/YruAuuA/E/BE";</script>'; 
+     echo '<script> window.location.href =  "https://www.youtube.com/" ; </script>'; 
  } catch (Exception $e) {
      echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
  }
