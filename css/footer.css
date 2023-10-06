@@ -22,7 +22,7 @@ p{
 /*-------footer start-------*/
 
 footer{
-    background-color:  #000;
+    background-color:  var(--primary-color);
     background: url('/images/footer-bg.png');
     background-size: cover;
     background-position: bottom;
