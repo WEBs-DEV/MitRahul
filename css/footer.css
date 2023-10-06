@@ -22,8 +22,9 @@ p{
 /*-------footer start-------*/
 
 footer{
-    background-color:  var(--primary-color);
+    
    /*  background: url('/images/footer-bg.png'); */
+    background-color:  var(--primary-color);
     background-size: cover;
     background-position: bottom;
     
